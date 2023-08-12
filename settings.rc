@@ -12,15 +12,24 @@ use-system-font=false
 use-theme-colors=false
 visible-name='Default'
 
+[com/github/donadigo/eddy]
+mime-types=['application/vnd.debian.binary-package', 'application/x-deb']
+window-width=674
+window-x=13
+window-y=11
+
 [io/elementary/appcenter/settings]
 cached-drivers=@as []
-last-refresh-time=int64 1691334018
-window-maximized=true
-window-position=(30, 26)
-window-size=(470, 528)
+last-refresh-time=int64 1691802217
+window-maximized=false
+window-position=(964, 8)
+window-size=(948, 1016)
+
+[org/gnome/Disks]
+image-dir-uri='file:///home/asahay/Downloads'
 
 [org/gnome/control-center]
-last-panel='desktop-dock'
+last-panel='background'
 
 [org/gnome/desktop/app-folders/folders/Pop-Office]
 apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-writer.desktop']
@@ -40,7 +49,7 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri-dark='file:///home/asahay/.local/share/backgrounds/2023-08-06-16-51-25-milad-fakurian-u8Jn2rzYIps-unsplash.jpg'
+picture-uri-dark='file:///home/asahay/.local/share/backgrounds/2023-08-12-05-12-50-benjamin-voros-phIFdC6lA4E-unsplash.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -54,15 +63,21 @@ xkb-options=['caps:escape']
 clock-show-weekday=true
 color-scheme='prefer-dark'
 cursor-theme='McMojave-cursors'
+enable-animations=true
 font-antialiasing='grayscale'
 font-hinting='slight'
 font-name='Ubuntu 10'
-gtk-theme='Sweet-Dark-v40'
+gtk-theme='Dracula'
 icon-theme='Flatery-Indigo'
+show-battery-percentage=true
 text-scaling-factor=1.1000000000000001
+toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-datetime-panel', 'gnome-power-panel', 'org-gnome-fileroller', 'gnome-control-center']
+application-children=['gnome-datetime-panel', 'gnome-power-panel', 'org-gnome-fileroller', 'gnome-control-center', 'org-gnome-nautilus', 'io-elementary-appcenter', 'firefox']
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-control-center]
 application-id='gnome-control-center.desktop'
@@ -73,8 +88,14 @@ application-id='gnome-datetime-panel.desktop'
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
 
+[org/gnome/desktop/notifications/application/io-elementary-appcenter]
+application-id='io.elementary.appcenter.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-fileroller]
 application-id='org.gnome.FileRoller.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
 
 [org/gnome/desktop/peripherals/mouse]
 accel-profile='default'
@@ -88,13 +109,21 @@ report-technical-problems=false
 
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
+lock-delay=uint32 0
 picture-options='zoom'
-picture-uri='file:///home/asahay/.local/share/backgrounds/2023-08-06-16-51-25-milad-fakurian-u8Jn2rzYIps-unsplash.jpg'
+picture-uri='file:///home/asahay/.local/share/backgrounds/2023-08-12-05-12-50-benjamin-voros-phIFdC6lA4E-unsplash.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
+[org/gnome/desktop/session]
+idle-delay=uint32 300
+
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
+
+[org/gnome/eog/view]
+background-color='rgb(0,0,0)'
+use-background-color=true
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -113,22 +142,35 @@ sort-type='ascending'
 
 [org/gnome/file-roller/ui]
 sidebar-width=200
-window-height=480
-window-width=600
+window-height=470
+window-width=948
+
+[org/gnome/gedit/plugins]
+active-plugins=['modelines', 'docinfo', 'openlinks', 'filebrowser', 'sort', 'spell']
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(948, 982)
+state=87040
 
 [org/gnome/mutter]
-edge-tiling=true
+edge-tiling=false
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1920, 1032)
-maximized=true
+initial-size=(948, 504)
+maximized=false
 
 [org/gnome/settings-daemon/plugins/color]
-night-light-last-coordinates=(53.36380143988481, -6.2465000000000002)
+night-light-last-coordinates=(53.372800719942404, -6.2465000000000002)
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1]
 binding='Launch1'
@@ -136,16 +178,19 @@ command='gnome-control-center wifi'
 name='WiFi'
 
 [org/gnome/settings-daemon/plugins/power]
+power-button-action='suspend'
 sleep-inactive-ac-timeout=1800
 sleep-inactive-ac-type='suspend'
 sleep-inactive-battery-timeout=1800
 sleep-inactive-battery-type='suspend'
 
 [org/gnome/shell]
+app-picker-layout=[{'org.gnome.Calendar.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'com.jetbrains.GoLand.desktop': <{'position': <2>}>, 'org.gnome.tweaks.desktop': <{'position': <3>}>, 'Pop-Utility': <{'position': <4>}>, 'vim.desktop': <{'position': <5>}>, 'nm-connection-editor.desktop': <{'position': <6>}>, 'org.gnome.Calculator.desktop': <{'position': <7>}>, 'org.gnome.gedit.desktop': <{'position': <8>}>, 'org.gnome.FileRoller.desktop': <{'position': <9>}>, 'simple-scan.desktop': <{'position': <10>}>, 'gucharmap.desktop': <{'position': <11>}>, 'gnome-system-monitor.desktop': <{'position': <12>}>, 'org.gnome.baobab.desktop': <{'position': <13>}>, 'org.gnome.DiskUtility.desktop': <{'position': <14>}>, 'org.gnome.Evince.desktop': <{'position': <15>}>, 'com.github.donadigo.eddy.desktop': <{'position': <16>}>, 'yelp.desktop': <{'position': <17>}>, 'org.gnome.Extensions.desktop': <{'position': <18>}>, 'org.gnome.eog.desktop': <{'position': <19>}>, 'org.gnome.font-viewer.desktop': <{'position': <20>}>, 'gnome-language-selector.desktop': <{'position': <21>}>}, {'libreoffice-startcenter.desktop': <{'position': <0>}>, 'org.gnome.PowerStats.desktop': <{'position': <1>}>, 'gnome-session-properties.desktop': <{'position': <2>}>, 'info.desktop': <{'position': <3>}>, 'com.system76.Popsicle.desktop': <{'position': <4>}>}]
 command-history=['r']
-disabled-extensions=@as []
-enabled-extensions=['ding@rastersoft.com', 'pop-cosmic@system76.com', 'pop-shell@system76.com', 'ubuntu-appindicators@ubuntu.com', 'cosmic-workspaces@system76.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'system76-power@system76.com', 'popx11gestures@system76.com', 'dash-to-dock@micxgx.gmail.com', 'cosmic-dock@system76.com', 'unite@hardpixel.eu', 'dash-to-panel@jderose9.github.com']
+disabled-extensions=['just-perfection-desktop@just-perfection', 'sound-output-device-chooser@kgshank.net', 'hidetopbar@mathieu.bidon.ca', 'ding@rastersoft.com']
+enabled-extensions=['pop-cosmic@system76.com', 'pop-shell@system76.com', 'ubuntu-appindicators@ubuntu.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'system76-power@system76.com', 'dash-to-dock@micxgx.gmail.com', 'unite@hardpixel.eu', 'cosmic-workspaces@system76.com', 'cosmic-dock@system76.com', 'popx11gestures@system76.com', 'dash-to-panel@jderose9.github.com']
 favorite-apps=['firefox.desktop', 'com.gexperts.Tilix.desktop', 'org.gnome.Nautilus.desktop', 'io.elementary.appcenter.desktop', 'gnome-control-center.desktop']
+had-bluetooth-devices-setup=true
 welcome-dialog-last-shown-version='42.5'
 
 [org/gnome/shell/extensions/dash-to-dock]
@@ -191,10 +236,10 @@ leftbox-padding=-1
 leftbox-size=0
 multi-monitors=true
 panel-anchors='{"0":"MIDDLE","1":"MIDDLE","2":"MIDDLE"}'
-panel-element-positions='{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"centerMonitor"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}],"1":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}],"2":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":false,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
+panel-element-positions='{"0":[{"element":"dateMenu","visible":true,"position":"stackedTL"},{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"centerMonitor"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"}],"1":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}],"2":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":false,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
 panel-element-positions-monitors-sync=false
 panel-lengths='{"0":100,"1":100,"2":100}'
-panel-positions='{"1":"BOTTOM"}'
+panel-positions='{"0":"BOTTOM","1":"BOTTOM"}'
 panel-sizes='{"0":48,"1":48,"2":48}'
 primary-monitor=0
 progress-show-count=true
@@ -209,7 +254,7 @@ stockgs-keep-top-panel=false
 taskbar-locked=true
 trans-bg-color='#13161a'
 trans-use-custom-bg=true
-trans-use-custom-opacity=false
+trans-use-custom-opacity=true
 tray-padding=-1
 tray-size=14
 window-preview-title-position='TOP'
@@ -220,6 +265,13 @@ enable-intellihide=true
 keep-round-corners=false
 mouse-sensitive=true
 
+[org/gnome/shell/extensions/just-perfection]
+activities-button=true
+clock-menu=true
+dash=true
+panel=true
+weather=true
+
 [org/gnome/shell/extensions/pop-cosmic]
 clock-alignment='CENTER'
 show-applications-button=false
@@ -227,15 +279,18 @@ show-workspaces-button=false
 
 [org/gnome/shell/extensions/pop-shell]
 active-hint=false
+active-hint-border-radius=uint32 5
+gap-inner=uint32 2
+gap-outer=uint32 2
 hint-color-rgba='rgb(92,107,192)'
 mouse-cursor-focus-location=uint32 2
-tile-by-default=false
+tile-by-default=true
 
 [org/gnome/shell/extensions/unite]
 show-window-title='always'
 
 [org/gnome/shell/extensions/user-theme]
-name='Sweet-Dark-v40'
+name='Pop-dark'
 
 [org/gnome/system/location]
 enabled=true
@@ -263,6 +318,10 @@ font='JetBrainsMono Nerd Font 12'
 palette=['rgb(23,20,33)', 'rgb(192,28,40)', 'rgb(38,162,105)', 'rgb(162,115,76)', 'rgb(18,72,139)', 'rgb(163,71,186)', 'rgb(42,161,179)', 'rgb(208,207,204)', 'rgb(94,92,100)', 'rgb(246,97,81)', 'rgb(51,209,122)', 'rgb(233,173,12)', 'rgb(42,123,222)', 'rgb(192,97,203)', 'rgb(51,199,222)', 'rgb(255,255,255)']
 use-theme-colors=true
 use-theme-transparency=true
+
+[org/gtk/gtk4/settings/color-chooser]
+custom-colors=[(0.074509806931018829, 0.086274512112140656, 0.10196078568696976, 1.0)]
+selected-color=(true, 0.074509806931018829, 0.086274512112140656, 0.10196078568696976, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
@@ -292,5 +351,5 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(30, 26)
+window-position=(13, 11)
 window-size=(1124, 822)

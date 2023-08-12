@@ -2,20 +2,23 @@
 <application-state>
   <context id="">
     <application id="org.gnome.FileRoller.desktop" score="6" last-seen="1691690806"/>
-    <application id="org.gnome.tweaks.desktop" score="53" last-seen="1691712346"/>
+    <application id="org.gnome.tweaks.desktop" score="71" last-seen="1691812652"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="38" last-seen="1691409519"/>
+    <application id="gnome-background-panel.desktop" score="0" last-seen="0"/>
     <application id="repoman.desktop" score="2" last-seen="1691366126"/>
-    <application id="gnome-control-center.desktop" score="105" last-seen="1691711291"/>
+    <application id="gnome-control-center.desktop" score="108" last-seen="1691813575"/>
     <application id="org.gnome.gedit.desktop" score="24" last-seen="1691806762"/>
     <application id="org.gnome.eog.desktop" score="1" last-seen="1691705388"/>
     <application id="org.gnome.Nautilus.desktop" score="61" last-seen="1691801002"/>
     <application id="com.jetbrains.GoLand.desktop" score="791" last-seen="1691712090"/>
+    <application id="gnome-mouse-panel.desktop" score="0" last-seen="0"/>
     <application id="gnome-initial-setup.desktop" score="15" last-seen="1691333947"/>
-    <application id="firefox.desktop" score="7140" last-seen="1691806773"/>
-    <application id="org.gnome.Terminal.desktop" score="566" last-seen="1691806782"/>
+    <application id="com.github.joseexposito.touche.desktop" score="19" last-seen="1691813326"/>
+    <application id="firefox.desktop" score="7307" last-seen="1691813695"/>
+    <application id="org.gnome.Terminal.desktop" score="567" last-seen="1691813342"/>
     <application id="virtualbox.desktop" score="122" last-seen="1691803316"/>
-    <application id="io.elementary.appcenter.desktop" score="180" last-seen="1691801785"/>
     <application id="org.gnome.DiskUtility.desktop" score="9" last-seen="1691376578"/>
-    <application id="org.gnome.Extensions.desktop" score="128" last-seen="1691610519"/>
+    <application id="io.elementary.appcenter.desktop" score="193" last-seen="1691811937"/>
+    <application id="org.gnome.Extensions.desktop" score="160" last-seen="1691813344"/>
   </context>
 </application-state>
