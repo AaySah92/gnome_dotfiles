@@ -1,4 +1,0 @@
-{"timestamp":3072317,"category":"perf","name":"page_load","extra":{"response_time":"342","load_time":"933","load_type":"NORMAL","http_ver":"2","js_exec_time":"80","dns_lookup_time":"21","fcp_time":"546"},"execution_counter":37}
-{"timestamp":3120300,"category":"perf","name":"page_load","extra":{"load_time":"1352","js_exec_time":"458","redirect_time":"695","http_ver":"2","fcp_time":"816","redirect_count":"1","load_type":"NORMAL"},"execution_counter":37}
-{"timestamp":3130339,"category":"perf","name":"page_load","extra":{"load_time":"3542","redirect_count":"2","load_type":"LINK","fcp_time":"2920","response_time":"2331","js_exec_time":"412","redirect_time":"1471","http_ver":"3"},"execution_counter":37}
-{"timestamp":3139358,"category":"perf","name":"page_load","extra":{"redirect_time":"1352","fcp_time":"2675","load_type":"LINK","load_time":"3166","http_ver":"3","response_time":"2099","redirect_count":"2","js_exec_time":"334"},"execution_counter":37}

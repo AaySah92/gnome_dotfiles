@@ -26,4 +26,5 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 export GOROOT=$HOME/sdk/go1.20.7
-export PATH=$PATH:$GOROOT/bin
+#export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$(go env GOPATH)/bin
